@@ -4,11 +4,39 @@
     <meta charset="utf-8">
     <title>Zach's Site</title>
     {% load static %}
-    <link rel="stylesheet" type="text/css" href="{% static 'resume/bootstrap-reboot.min.css' %}" />
-    <link rel="stylesheet" type="text/css" href="{% static 'resume/bootstrap-grid.min.css' %}" />
+    <link rel="stylesheet" type="text/css" href="{% static 'base/bootstrap-reboot.min.css' %}" />
+    <link rel="stylesheet" type="text/css" href="{% static 'base/bootstrap-grid.min.css' %}" />
+    <link href="https://fonts.googleapis.com/css?family=Lato|Raleway" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="{% static 'base/base-styles.css' %}" />
   </head>
   <body>
-    {% block content %}
+    {% block navbar %}
+    <div class="container-fluid">
+      <div class="navbar row">
+        <nav class="col-sm-2">
+          <img id="navLogo" src="{% static 'base/logotype.svg'%}" alt="logotype">
+        </nav>
+        <nav class="col-sm-5">
+        </nav>
+        <div class="col-sm-5">
+          <div class="row">
+            <nav class="col-sm">
+              <h4 >About</h4>
+            </nav>
+            <nav class="col-sm">
+              <h4>Resume</h4>
+            </nav>
+            <nav class="col-sm">
+              <h4>Projects</h4>
+            </nav>
+          </div>
+        </div>
+      </div>
+    </div>
     {% endblock %}
+    <div id="content">
+      {% block content %}
+      {% endblock %}
+    </div>
   </body>
 </html>

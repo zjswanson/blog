@@ -1,0 +1,21 @@
+
+body {
+  font-family: 'Lato';
+  line-height: 1.5em;
+}
+
+h1,
+h2,
+h3,
+h4 {
+  font-family: 'Raleway';
+}
+
+.navbar img {
+  margin-left: 10px;
+  height: 60px;
+}
+
+#content {
+  margin-top: 40vh;
+}
