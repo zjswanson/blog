@@ -3,4 +3,6 @@ from django.http import HttpResponse
 
 # Create your views here.
 def index(request):
-    return render(request, "resume/index.html")
+    return render(request, "resume/index.html", {
+        "navbar_tall" : True
+    })

@@ -1,13 +1,25 @@
 {% extends "base/base.html" %}
 
+{% block head_styles %}
+{%load static %}
+  <link rel="stylesheet" type="text/css" href="{% static 'resume/resume-styles.css' %}" />
+{% endblock %}
+
 {% block content %}
+<div class="container-fluid">
+  <div class="row">
+    <div class="col-xs-12 banner">
+       <div class="banner-text">
+         <h3>Zach j Swanson</h3>
+         <h1>Web Application Developer</h1>
+       </div>
+    </div>
+
+  </div>
+</div>
 <div class="container">
   <div class="row">
-    <div class="col-md-3">
-      <h1>This is a test</h1>
-      <p>this is test content</p>
-    </div>
-    <div class="col-md-9">
+    <div class="col-xs-12">
       <p>This is wider content.  It should take up more space.  But it is also test content meant to test things. but how does this look with a bunch of text.  Like lots of it.  Text all over the place. typey type type.  Hey, what are you up do? anything cool?  Just reading a website, huh?</p>
     </div>
   </div>

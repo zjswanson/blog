@@ -1,0 +1,7 @@
+#content .banner {
+  height: 35vh;
+  width: 100%;
+  background-image: url('images/xv.png');
+  background-color: #2b4162;
+  margin-bottom: 20vh;
+}

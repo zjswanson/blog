@@ -1,21 +1,36 @@
 
 body {
-  font-family: 'Lato';
-  line-height: 1.5em;
+  font-family: 'Raleway';
+  line-height: 1.5;
 }
 
 h1,
 h2,
 h3,
 h4 {
-  font-family: 'Raleway';
+  font-family: 'Volkorn';
+  font-style: italic;
+  font-weight: inherit;
 }
 
-.navbar img {
-  margin-left: 10px;
+/* Navbar Styles */
+
+.navbar {
   height: 60px;
 }
 
-#content {
-  margin-top: 40vh;
+.navbar.tall {
+  height: 45vh;
 }
+
+.navbar img {
+  position: relative;
+  width: 60%;
+  left: 50%;
+  transform: translateX(-50%);
+  max-height: 80px;
+}
+
+
+
+/* Page Content Styles */
