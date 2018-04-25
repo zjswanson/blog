@@ -1,3 +1,21 @@
+.display-header.tall {
+  height: 45vh;
+}
+
+.display-header.tall img {
+  display: block;
+  position: relative;
+  max-height: 80px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.display-header.tall .header-contact {
+  display: block;
+  color: #FA9F42;
+  text-align: center;
+}
+
 #content .banner {
   position: relative;
   min-height: 35vh;

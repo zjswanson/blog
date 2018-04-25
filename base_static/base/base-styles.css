@@ -14,23 +14,52 @@ h4 {
 }
 
 /* Navbar Styles */
+.nav-container {
+  position: fixed;
+  top: 0;
+  overflow: hidden;
+  z-index: 5;
+  background: white;
+  box-shadow: 2px 2px 5px grey;
+}
 
 .navbar {
   height: 60px;
+  transition: height .2s ease;
 }
 
-.navbar.tall {
-  height: 45vh;
+.navbar.open {
+  height: 20em;
+}
+
+.logo-container {
+  height: 60px;
 }
 
 .navbar img {
+  height: 40px;
   position: relative;
-  width: 60%;
-  left: 50%;
-  transform: translateX(-50%);
-  max-height: 80px;
+  top: 50%;
+  transform: translateY(-50%);
 }
 
+.navbar .menu-button {
+  position: absolute;
+  top: 50%;
+  right: 5%;
+  transform: translateY(-50%);
+}
 
+.navbar nav {
+  /* background-color: grey; */
+}
+
+.navbar h4 {
+  text-align: center;
+  line-height: 2.5;
+}
 
 /* Page Content Styles */
+#content {
+  margin-top: 70vh;
+}

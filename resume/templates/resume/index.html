@@ -6,6 +6,30 @@
 {% endblock %}
 
 {% block content %}
+<div class="container-fluid" hidden>
+  <div class="display-header row align-items-center {% if navbar_tall %}tall{% endif %}">
+    <nav class="col-sm-4">
+      <!-- <button type="button" name="work">Work with Me</button> -->
+      <h4 class="header-contact">zach.j.swanson@gmail.com</h4>
+    </nav>
+    <nav class="col-sm-4">
+      <img src="{% static 'base/logotype.svg'%}" alt="logotype">
+    </nav>
+    <div class="col-sm-4">
+      <div class="row">
+        <nav class="col-4">
+          <h4 >about</h4>
+        </nav>
+        <nav class="col-4">
+          <h4>resume</h4>
+        </nav>
+        <nav class="col-4">
+          <h4>projects</h4>
+        </nav>
+      </div>
+    </div>
+  </div>
+</div>
 <div class="container-fluid">
   <div class="row">
     <div class="col-xs-12 banner">
