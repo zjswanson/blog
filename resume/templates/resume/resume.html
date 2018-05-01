@@ -1,0 +1,54 @@
+{% extends "base/base.html" %}
+
+{% block head_styles %}
+{%load static %}
+  <link rel="stylesheet" type="text/css" href="{% static 'resume/resume-resume.css' %}" />
+{% endblock %}
+
+{% block content %}
+<div class="container-fluid banner-container">
+  <div class="row">
+    <div class="col-xs-12 banner">
+       <div class="banner-text">
+         <h3>Zach j Swanson</h3>
+         <h1>Resume</h1>
+       </div>
+    </div>
+
+  </div>
+</div>
+<div class="container">
+  <div class="row">
+    <div class="col-sm-8">
+      <div class="section skillset">
+        <h1>Skillset</h1>
+        <div class="">
+          <p><span class="title">JavaScript - </span>UI development, Single page apps with React and Angular, vendor and library integration, D3 data visualization, and extensive Bootstrap and jQuery</p>
+        </div>
+      </div>
+      <div class="section experience">
+        <h1>Selected Experience</h1>
+        <div class="">
+          <h3><span class="title">CloudEngage</span> / Junior Engineer from 6/2017 to 3/2018</h3>
+          <h4>Cloud based tool for website personalization</h4>
+          <p>Full Stack work on SaaS marketing  application in PHP and JavaScript.  Created user interfaces, interactive feature tours, debugged unmaintained vendor libraries, implemented personalized user onboarding.</p>
+        </div>
+      </div>
+      <div class="section education">
+        <h1>Education</h1>
+        <h3>Portland State University / B.S. Economics / 2013</h3>
+        <h3>Epicodus / Developer Bootcamp / 2017</h3>
+      </div>
+    </div>
+    <div class="col-sm-4">
+      <div class="section contact">
+        <h1>Contact</h1>
+        <h4>503.679.8499</h4>
+        <h4><a href="mailto:zach.j.swanson@gmail.com">zach.j.swanson@gmail.com</a></h4>
+        <h4><a href="https://github.com/zjswanson">github.com/zjswanson</h4>
+        <h4><a href="https://www.linkedin.com/in/zach-swanson/">linkedin.com/in/zach-swanson/</h4>
+      </div>
+    </div>
+  </div>
+</div>
+{% endblock %}

@@ -25,7 +25,7 @@ var menuModule = (function() {
       }
     } else {
       var menuTriggerHeight = $('.display-header').outerHeight() - navBaseHeight;
-
+      
       if (scrollPosition > menuTriggerHeight && !navIsVisible) {
         $navContainer.removeClass('hide')
         navIsVisible = true;

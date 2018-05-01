@@ -2,7 +2,7 @@
 
 {% block head_styles %}
 {%load static %}
-  <link rel="stylesheet" type="text/css" href="{% static 'resume/resume-styles.css' %}" />
+  <link rel="stylesheet" type="text/css" href="{% static 'resume/resume-index.css' %}" />
 {% endblock %}
 
 {% block content %}
@@ -10,21 +10,21 @@
   <div class="display-header row align-items-center">
     <nav class="col-sm-4">
       <!-- <button type="button" name="work">Work with Me</button> -->
-      <h4 class="header-contact">zach.j.swanson@gmail.com</h4>
+      <a href="mailto:zach.j.swanson@gmail.com"><h4 class="header-contact">zach.j.swanson@gmail.com</h4></a>
     </nav>
     <nav class="col-sm-4">
-      <img src="{% static 'base/logotype.svg'%}" alt="logotype">
+      <a href="{% url 'resume:index' %}"><img src="{% static 'base/logotype.svg'%}" alt="logotype"></a>
     </nav>
     <div class="col-sm-4">
       <div class="row">
         <nav class="col-4">
-          <h4 >about</h4>
+          <h4><a href="{% url 'resume:resume' %}">about</a></h4>
         </nav>
         <nav class="col-4">
-          <h4>resume</h4>
+          <h4><a href="{% url 'resume:resume' %}">resume</a></h4>
         </nav>
         <nav class="col-4">
-          <h4>projects</h4>
+          <h4><a href="{% url 'resume:resume' %}">contact</a></h4>
         </nav>
       </div>
     </div>

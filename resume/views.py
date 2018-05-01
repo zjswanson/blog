@@ -8,6 +8,6 @@ def index(request):
     })
 
 def resume(request):
-    return render(request, "resume/index.html", {
+    return render(request, "resume/resume.html", {
         "hide_navbar" : False
     })
