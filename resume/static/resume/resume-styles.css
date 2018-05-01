@@ -1,8 +1,14 @@
-.display-header.tall {
+.display-header {
   height: 45vh;
 }
 
-.display-header.tall img {
+@media screen and (max-width: 575px) {
+  .banner-container {
+    margin-top: 60px;
+  }
+}
+
+.display-header img {
   display: block;
   position: relative;
   max-height: 80px;
@@ -10,7 +16,7 @@
   transform: translateX(-50%);
 }
 
-.display-header.tall .header-contact {
+.display-header .header-contact {
   display: block;
   color: #FA9F42;
   text-align: center;

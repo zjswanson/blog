@@ -21,6 +21,12 @@ h4 {
   z-index: 5;
   background: white;
   box-shadow: 2px 2px 5px grey;
+  transition: opacity .15s ease;
+  opacity: 1;
+}
+
+.nav-container.hide {
+  opacity: 0;
 }
 
 .navbar {
@@ -29,7 +35,7 @@ h4 {
 }
 
 .navbar.open {
-  height: 20em;
+  /* height: 20em; */
 }
 
 .logo-container {
@@ -43,6 +49,16 @@ h4 {
   transform: translateY(-50%);
 }
 
+.logo-container h4 {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  color: #2b4162;
+  font-size: 20px;
+}
+
 .navbar .menu-button {
   position: absolute;
   top: 50%;
@@ -50,16 +66,22 @@ h4 {
   transform: translateY(-50%);
 }
 
+.navbar .navMenu {
+  padding-top: 15px;
+  padding-bottom: 15px;
+}
+
 .navbar nav {
-  /* background-color: grey; */
+  margin-bottom: 10px;
 }
 
 .navbar h4 {
   text-align: center;
   line-height: 2.5;
+  margin: 0;
 }
 
 /* Page Content Styles */
 #content {
-  margin-top: 70vh;
+  /* margin-top: 70vh; */
 }

@@ -14,15 +14,16 @@
   </head>
   <body>
     {% block navbar %}
-    <div class="container-fluid nav-container">
+    <div class="container-fluid nav-container {% if hide_navbar %}hide{% endif %}">
       <div class="navbar row">
         <div class="logo-container col-xs-12 col-sm-4">
           <!-- <button type="button" name="work">Work with Me</button> -->
           <img src="{% static 'base/logotype.svg'%}" alt="logotype">
+          <h4 class="d-xs-block d-sm-none">Zach j Swanson</h4>
           <i class="menu-button d-xs-block d-sm-none">X</i>
         </div>
-        <div class="col-xs-12 col-sm-8 align-self-center">
-          <div class="row align-items-center">
+        <div class="col-xs-12 col-sm-8 align-self-center navMenu">
+          <div class="row">
             <nav class="col-sm col-xs-12">
               <h4 >about</h4>
             </nav>
@@ -30,10 +31,7 @@
               <h4>resume</h4>
             </nav>
             <nav class="col-sm col-xs-12">
-              <h4>projects</h4>
-            </nav>
-            <nav class="col-sm col-xs-12">
-              <h4>projects</h4>
+              <h4>contact</h4>
             </nav>
           </div>
         </div>
