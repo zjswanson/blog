@@ -29,7 +29,7 @@
 }
 
 .banner-text h3 {
-  color: goldenrod;
+  color: #FA9F42;
   font-family: 'Raleway';
 }
 
@@ -53,9 +53,9 @@ h3 {
 
 .section {
   padding: 5px;
-  margin-bottom: 3em;
 }
 
 .section div {
   margin-left: 10px;
+  margin-bottom: 3em;
 }

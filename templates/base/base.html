@@ -12,6 +12,7 @@
       src="https://code.jquery.com/jquery-3.3.1.min.js"
       integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
       crossorigin="anonymous"></script>
+    <script defer src="https://use.fontawesome.com/releases/v5.0.11/js/all.js" integrity="sha384-ImVoB8Er8knetgQakxuBS4G3RSkyD8IZVVQCAnmRJrDwqJFYUE4YOv+DbIofcO9C" crossorigin="anonymous"></script>
     {% block head_styles %}
     {% endblock %}
   </head>
@@ -23,18 +24,23 @@
           <!-- <button type="button" name="work">Work with Me</button> -->
           <a href="{% url 'resume:index' %}"><img src="{% static 'base/logotype.svg'%}" alt="logotype"></a>
           <a href="{% url 'resume:index' %}"><h4 class="d-xs-block d-sm-none">Zach j Swanson</h4></a>
-          <i class="menu-button d-xs-block d-sm-none">X</i>
+          <div class="menu-button">
+            <i class="menu-button fas fa-bars d-xs-block d-sm-none"></i>
+          </div>
         </div>
         <div class="col-xs-12 col-sm-8 align-self-center navMenu">
           <div class="row">
             <nav class="col-sm col-xs-12">
-              <h4><a href="{% url 'resume:resume' %}">about</a></h4>
+              <h4><a href="{% url 'resume:index' %}">about</a></h4>
             </nav>
             <nav class="col-sm col-xs-12">
               <h4><a href="{% url 'resume:resume' %}">resume</a></h4>
             </nav>
-            <nav class="col-sm col-xs-12">
-              <h4><a href="{% url 'resume:resume' %}">contact</a></h4>
+            <nav class="col-sm col-xs-12 contact align-self-center">
+              <a href="https://github.com/zjswanson" target="_blank"><i class="fab fa-github fa-lg"></i></a>
+            </nav>
+            <nav class="col-sm col-xs-12 contact align-self-center">
+              <a href="https://www.linkedin.com/in/zach-swanson/" target="_blank"><i class="fab fa-linkedin fa-lg"></i></a>
             </nav>
           </div>
         </div>
