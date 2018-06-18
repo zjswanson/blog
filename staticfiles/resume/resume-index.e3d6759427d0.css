@@ -1,0 +1,56 @@
+.display-header {
+  height: 45vh;
+}
+
+@media screen and (max-width: 575px) {
+  .banner-container {
+    margin-top: 60px;
+  }
+}
+
+.display-header img {
+  display: block;
+  position: relative;
+  max-height: 80px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.display-header .header-contact {
+  display: block;
+  color: #FA9F42;
+  text-align: center;
+}
+
+#content .banner {
+  position: relative;
+  min-height: 35vh;
+  width: 100%;
+  background-image: url("images/xv.f60fb2fbdf9d.png");
+  background-color: #2b4162;
+  margin-bottom: 20vh;
+  padding: 5vh;
+}
+
+.banner-text {
+  position: relative;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.banner-text h1,
+.banner-text h3 {
+  text-align: right;
+  /* margin-right: 15%; */
+  /* margin-bottom: 2rem; */
+}
+
+.banner-text h1 {
+  color: white;
+  font-size: 3em;
+}
+
+.banner-text h3 {
+  color: #FA9F42;
+  font-family: 'Raleway';
+}

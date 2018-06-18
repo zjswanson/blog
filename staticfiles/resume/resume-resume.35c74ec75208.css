@@ -1,0 +1,61 @@
+ body {
+   font-size: 14px;
+   line-height: 2;
+ }
+
+.banner-container {
+  margin-top: 60px;
+}
+
+#content .banner {
+  position: relative;
+  min-height: 35vh;
+  width: 100%;
+  background-image: url("images/xv.f60fb2fbdf9d.png");
+  background-color: #2b4162;
+  margin-bottom: 10vh;
+  padding: 5vh;
+}
+
+.banner-text {
+  position: relative;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.banner-text h1 {
+  color: white;
+  font-size: 3em;
+}
+
+.banner-text h3 {
+  color: #FA9F42;
+  font-family: 'Raleway';
+}
+
+h3 {
+  font-family: 'Raleway';
+  font-style: normal;
+}
+
+.section .title {
+  font-size: 18px;
+  font-weight: 500;
+}
+
+.experience h4 {
+  font-family: 'Volkhorn';
+  font-style: italic;
+  font-size: 16px;
+  line-height: 1;
+  margin-bottom: 1.5em;
+}
+
+.section {
+  padding: 5px;
+}
+
+.section div {
+  margin-left: 10px;
+  margin-bottom: 3em;
+}
